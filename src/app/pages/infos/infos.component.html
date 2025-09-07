@@ -1,0 +1,32 @@
+<div class="container-content-form">
+    <div class="container-content-form-body">
+        <div class="container-content-form-body-text">
+            <span class="container-content-form-body-text-title">
+                Informações sobre <span style="display: block;"> {{infos?.name}}: </span>
+            </span>
+        </div>
+        <div class="container-content-form-body-infos">
+            <div class="container-content-form-body-infos-item">
+                <span class="container-content-form-body-text-subtitle">Filmes:</span>
+                <info-tag [items]="infos?.films" />
+            </div>
+            <div class="container-content-form-body-infos-item">
+                <span class="container-content-form-body-text-subtitle">Naves:</span>
+                <info-tag [items]="infos?.starships" />
+            </div>
+            <div class="container-content-form-body-infos-item">
+                <span class="container-content-form-body-text-subtitle">Veículos:</span>
+                <info-tag [items]="infos?.vehicles" />
+            </div>
+            <div class="container-content-form-body-infos-item">
+                <span class="container-content-form-body-text-subtitle">Espécie:</span>
+                <info-tag [items]="infos?.species" />
+            </div>
+            <div class="container-content-form-body-infos-item">
+                <span class="container-content-form-body-text-subtitle">Planeta:</span>
+                <info-tag [items]="infos?.homeworld" />
+            </div>
+        </div>
+    </div>
+    <button (click)="searchAgain()" class="container-content-form-button">Pesquisar Novamente</button>
+</div>

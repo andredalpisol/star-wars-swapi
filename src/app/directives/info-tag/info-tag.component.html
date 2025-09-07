@@ -1,0 +1,5 @@
+<div class="container-content-form-body-infos-item-tag">
+    <span class="container-content-form-body-infos-item-tag-result" *ngFor="let item of items">{{item.name ?
+        item.name : item.title}}</span>
+    <span class="container-content-form-body-infos-item-tag-empty" *ngIf="!items || items.length === 0">N/A</span>
+</div>

@@ -1,0 +1,20 @@
+<div class="container-content-form">
+    <div class="container-content-form-body">
+        <div class="container-content-form-body-text">
+            <span class="container-content-form-body-text-title">Olá!</span>
+            <span class="container-content-form-body-text-subtitle">
+                Para começar seu teste, digite um e-mail:
+            </span>
+        </div>
+        <div class="container-content-form-body-input">
+            <input
+                [ngClass]="{'error': isEmailValid !== null && !isEmailValid, 'default': isEmailValid === null || isEmailValid}"
+                [(ngModel)]="email" placeholder="exemplo@email.com" type="email"
+                class="container-content-form-body-input-item">
+            <span *ngIf="isEmailValid !== null && !isEmailValid" class="container-content-form-body-input-error">
+                Email inválido!
+            </span>
+        </div>
+    </div>
+    <button (click)="validateEmail()" class="container-content-form-button">Próximo</button>
+</div>

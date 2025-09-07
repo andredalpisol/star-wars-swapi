@@ -1,0 +1,25 @@
+<div class="container-content-form" *ngIf="!isLoading">
+    <div class="container-content-form-body">
+        <div class="container-content-form-body-text">
+            <span class="container-content-form-body-text-subtitle"> Agora, digite seu personagem favorito de
+                Star Wars </span>
+        </div>
+        <div class="container-content-form-body-input">
+            <input
+                [ngClass]="{'error': isCharacterValid !== null && !isCharacterValid, 'default': isCharacterValid === null || isCharacterValid}"
+                [(ngModel)]="characterName" placeholder="Ex: Darth Vader" type="text"
+                class="container-content-form-body-input-item">
+            <span class="container-content-form-body-input-error"
+                *ngIf="isCharacterValid !== null && !isCharacterValid"> Personagem inválido ou não encontrado!
+            </span>
+        </div>
+    </div>
+    <button (click)="validateCharacter()" class="container-content-form-button"> Próximo </button>
+</div>
+
+<div class="container-content-form" *ngIf="isLoading">
+    <div class="container-content-form-body">
+        <img class="container-content-form-body-loading" src="assets/images/loading-icon.png" alt="Storm Trooper">
+        <span class="container-content-form-body-text-subtitle container-content-form-body-dots"> Carregando </span>
+    </div>
+</div>
