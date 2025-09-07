@@ -24,4 +24,4 @@ O desafio foi desenvolvido para praticar e demonstrar conceitos como **consumo d
 
 Este projeto está disponível online! Confira clicando aqui:
 
-[👉 VER PROJETO ONLINE](https://hackerman-challenge-nu.vercel.app)
+[👉 VER PROJETO ONLINE](https://star-wars-swapi-kappa.vercel.app)
