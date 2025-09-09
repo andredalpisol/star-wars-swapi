@@ -14,7 +14,8 @@ O desafio foi desenvolvido para praticar e demonstrar conceitos como **consumo d
 
 ## Como rodar localmente
 
-- Clone o projeto: git clone https://github.com/andredalpisol/hackerman-challenge.git
+- Clone o projeto: git clone
+https://github.com/andredalpisol/star-wars-swapi.git 
 - cd hackerman
 - npm install
 - ng serve
